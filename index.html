@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Code Player</title>
+  </head>
+
+  <body>
+    <section id="header">
+      <section id="buttonWrapper">
+        <button id="htmlButton" class="buttons" style="vertical-align: middle">
+          <span><i>HTML</i></span>
+        </button>
+        <button id="cssButton" class="buttons" style="vertical-align: middle">
+          <span><i>CSS</i> </span>
+        </button>
+        <button id="jsButton" class="buttons" style="vertical-align: middle">
+          <span><i>JS</i> </span>
+        </button>
+        <button
+          id="outputButton"
+          class="buttons"
+          style="vertical-align: middle"
+        >
+          <span><i>OUTPUT</i></span>
+        </button>
+      </section>
+    </section>
+
+    <section id="textareasAndIframe">
+      <textarea
+        placeholder="<h1 id='doorBell'>I am drunk-tank pink door bell</h1>"
+        class="textareas textandifrs"
+        id="html"
+        rows="10"
+        cols="35"
+      ></textarea>
+      <textarea
+        placeholder="#doorBell{color:#FF91AF}"
+        class="textareas textandifrs"
+        id="css"
+        rows="10"
+        cols="35"
+      ></textarea>
+      <textarea
+        placeholder="document.getElementById('doorBell').onclick = function(){alert('Hello? Is there anybody in there?')}"
+        class="textareas textandifrs"
+        id="js"
+        rows="10"
+        cols="35"
+      ></textarea>
+
+      <iframe id="output"></iframe>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
